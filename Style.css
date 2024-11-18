@@ -1,0 +1,127 @@
+/* Общий стиль */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #ffe8e5, #ffccb5);
+  color: #333;
+  line-height: 1.6;
+}
+
+header.hero {
+  text-align: center;
+  background: linear-gradient(to right, #ff7a5a, #ffa76f);
+  color: white;
+  padding: 50px 20px;
+}
+
+header.hero h1 {
+  font-size: 2rem;
+}
+
+header.hero p {
+  margin: 10px 0 20px;
+}
+
+.btn-primary {
+  text-decoration: none;
+  background: #ffffff;
+  color: #ff6347;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background: #ff6347;
+  color: #ffffff;
+}
+
+.about,
+.order,
+.contacts {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contacts ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts li {
+  margin: 10px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #333;
+  color: white;
+}
+
+/* --- Адаптация для мобильных устройств --- */
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    background: linear-gradient(to bottom, #ffe8e5, #ffb5a7);
+  }
+
+  header.hero {
+    padding: 30px 10px;
+  }
+
+  header.hero h1 {
+    font-size: 1.8rem;
+  }
+
+  header.hero p {
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .about,
+  .order,
+  .contacts {
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 95%;
+    box-shadow: none;
+  }
+
+  .contacts li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header.hero h1 {
+    font-size: 1.5rem;
+  }
+
+  header.hero p {
+    font-size: 0.9rem;
+  }
+
+  .btn-primary {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+
+  .contacts li {
+    font-size: 0.8rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}

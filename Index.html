@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Свинина в Атбасаре</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <h1>Свежая свинина в Атбасаре</h1>
+      <p>Домашняя продукция. Звоните и заказывайте!</p>
+      <a href="#order" class="btn-primary">Сделать заказ</a>
+    </header>
+
+    <main>
+      <!-- О продукции -->
+      <section class="about">
+        <h2>Почему стоит выбрать нас?</h2>
+        <p>
+          Мы предлагаем свежую домашнюю свинину из Атбасара. Продукция выращена
+          на натуральных кормах. Гарантируем качество и свежесть каждого
+          килограмма!
+        </p>
+      </section>
+
+      <!-- Форма заказа -->
+      <section id="order" class="order">
+        <h2>Как оформить заказ?</h2>
+        <p>Позвоните нам или отправьте сообщение через WhatsApp.</p>
+        <form id="orderForm">
+          <label for="name">Ваше имя:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Иван Иванов"
+            required
+          />
+
+          <label for="phone">Ваш номер телефона:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+7 777 777 7777"
+            required
+          />
+
+          <label for="quantity">Количество (кг):</label>
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            placeholder="Введите количество"
+            required
+          />
+
+          <button type="button" id="whatsappButton">Написать в WhatsApp</button>
+        </form>
+      </section>
+
+      <!-- Контакты -->
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <p>Вы можете связаться с нами напрямую:</p>
+        <ul>
+          <li>Телефон: <a href="tel:+77056575046">+7 705 657 5046</a></li>
+          <li>
+            WhatsApp:
+            <a href="https://wa.me/77056575046" target="_blank"
+              >Отправить сообщение</a
+            >
+          </li>
+          <li>Адрес: Атбасар, Казахстан</li>
+          <li>Меня зовут: Ирина</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>Продажа свинины в Атбасаре © 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
